@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<!-- favicon
+        ============================================ -->        
+        <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico">       
+        <!-- Google Fonts
+        ============================================ -->        
+        <!-- <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'> -->
+        <!-- <link href="fonts/allfont/allfont.css?fonts=montserrat-light" rel="stylesheet" type="text/css" /> -->
+        <!--linearicons font-->
+        <link rel="stylesheet" href="{dede:global.cfg_templets_skin/}/style/linearfont.css">
+        <!-- Bootstrap CSS
+        ============================================ -->        
+        <link rel="stylesheet" href="{dede:global.cfg_templets_skin/}/style/bootstrap.min.css">
+        <!-- meanmenu CSS
+        ============================================ -->        
+        <link rel="stylesheet" href="{dede:global.cfg_templets_skin/}/style/meanmenu.min.css">
+        <!-- Bootstrap CSS
+        ============================================ -->
+        <link rel="stylesheet" href="{dede:global.cfg_templets_skin/}/font/css/font-awesome.min.css">
+        <link rel="stylesheet" href="{dede:global.cfg_templets_skin/}/style/font-awesome.min.css">
+        <link rel="stylesheet" href="{dede:global.cfg_templets_skin/}/font/css/font-awesome.css">
+        <!-- owl.carousel CSS
+        ============================================ -->
+        <link rel="stylesheet" href="{dede:global.cfg_templets_skin/}/style/owl.carousel.css">
+        <link rel="stylesheet" href="{dede:global.cfg_templets_skin/}/style/owl.theme.css">
+        <link rel="stylesheet" href="{dede:global.cfg_templets_skin/}/style/owl.transitions.css">
+        <!-- animate CSS
+        ============================================ -->
+        <link rel="stylesheet" href="{dede:global.cfg_templets_skin/}/style/animate.css">
+        <!-- normalize CSS
+        ============================================ -->
+        <link rel="stylesheet" href="{dede:global.cfg_templets_skin/}/style/normalize.css">
+        <!-- Nivo Slider CSS -->
+        <link rel="stylesheet" href="{dede:global.cfg_templets_skin/}/style/nivo-slider.css">
+        <!-- Add venobox css -->
+        <link rel="stylesheet" href="{dede:global.cfg_templets_skin/}/venobox/venobox.css"> 
+        <!-- main CSS
+        ============================================ -->
+        <link rel="stylesheet" href="{dede:global.cfg_templets_skin/}/style/main.css">
+        <!-- Nivo Slider CSS -->
+        <link rel="stylesheet" href="{dede:global.cfg_templets_skin/}/style/nivo-slider.css">       
+        <!-- style CSS
+        ============================================ -->
+        <link rel="stylesheet" href="{dede:global.cfg_templets_skin/}/style/style.css">
+        <!-- responsive CSS
+        ============================================ -->
+        <link rel="stylesheet" href="{dede:global.cfg_templets_skin/}/style/responsive.css">
+        <!-- modernizr JS
+        ============================================ -->        
+        <script src="{dede:global.cfg_templets_skin/}/js/vendor/modernizr-2.8.3.min.js"></script>
+</head>
+<body>
+	<div class="header_area">
+        <div class="container">
+            <div class="row">
+                <!-- header  logo --> 
+                <div class="col-md-4 col-sm-3 col-xs-12">
+                    <div class="logo"><a href="index.html"><img src="{dede:global.cfg_templets_skin/}/images/logo.png" alt="" /></a></div>
+                </div>
+                <!-- end header  logo --> 
+                <div class="col-md-8 col-sm-9 col-xs-12">
+                    <div>
+                        <div class="form pull-right">
+                            <div class="language">
+                                  <select class="form-lan">
+                                    <option value="english" selected>English</option>
+                                    <option value="english">Arabic</option>
+                                  </select>
+                            </div>
+                        </div>
+                        <div class="social_icon pull-right">
+                            <p>
+                               <a target="_blank" href="#" class="icon-set"><i class="fa fa-facebook"></i></a> 
+                               <a target="_blank" href="#" class="icon-set"><i class="fa fa-twitter"></i></a> 
+                               <a target="_blank" href="#" class="icon-set"><i class="fa fa-linkedin"></i></a>
+                            </p>
+                        </div>              
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--end header  area --> 
+    <!--Start nav  area --> 
+    <div class="nav_area">
+        <div class="container">
+            <div class="row">
+                <!--nav item-->
+                <div class="col-md-12 col-sm-12 col-xs-12">
+                    <!--  nav menu-->
+                    <nav class="menu">
+                        <ul class="navid pull-left">
+                            {dede:channel type='top' row='10' currentstyle="<li><a href='~typelink~' class='thisclass'>~typename~</a> </li>"}
+                            <li><a href='[field:typelink/]'>[field:typename/]</a> </li>
+                            {/dede:channel}
+                        </ul>
+                    </nav>
+                    <!--end  nav menu-->    
+                    <div class="search pull-right">
+                        <div class="search-box">
+                            <input type="text" class="form_control" placeholder="search" />
+                            <span class="search-open"><i class="fa fa-search search"></i><i class="fa fa-close hidden close"></i></span>
+                        </div>
+                    </div>
+                </div>
+                <!--end nav item -->
+            </div>  
+        </div>
+    
+    </div>
+    <!--end nav  area -->
+    <!--Start mobile menu  area -->
+    <div class="mobile_memu_area">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12">
+                    <!--  nav menu-->
+                        <nav class="navbar navbar-inverse" role="navigation">
+                           <div class="navbar-header">
+                              <button type="button" class="navbar-toggle" data-toggle="collapse"          data-target="#example-navbar-collapse">
+                                 <span class="sr-only">切换导航</span>
+                                 <span class="icon-bar"></span>
+                                 <span class="icon-bar"></span>
+                                 <span class="icon-bar"></span>
+                              </button>
+                              <a class="navbar-brand" href="#">jianzhan</a>
+                           </div>
+                           <div class="collapse navbar-collapse" id="example-navbar-collapse">
+                                <ul class="nav navbar-nav">
+                                    {dede:channel type='top' row='10' currentstyle="<li><a href='~typelink~' class='thisclass'>~typename~</a> </li>"}
+                                    <li><a href='[field:typelink/]'>[field:typename/]</a> </li>
+                                    {/dede:channel}
+                                </ul>
+                           </div>
+                        </nav>
+                    <!--end  nav menu-->
+ 
+                </div>
+            </div>
+        </div>
+    </div>
+		<!-- jquery
+        ============================================ -->        
+        <script src="{dede:global.cfg_templets_skin/}/js/vendor/jquery-1.11.3.min.js"></script>
+        <!-- bootstrap JS
+        ============================================ -->        
+        <script src="{dede:global.cfg_templets_skin/}/js/bootstrap.min.js"></script>
+        <!-- wow JS
+        ============================================ -->        
+        <script src="{dede:global.cfg_templets_skin/}/js/wow.min.js"></script>
+         <!-- Nivo Slider JS -->
+        <script src="{dede:global.cfg_templets_skin/}/js/jquery.nivo.slider.pack.js"></script>      
+        <!-- meanmenu JS
+        ============================================ -->        
+        <script src="{dede:global.cfg_templets_skin/}/js/jquery.meanmenu.min.js"></script>
+        <script src="{dede:global.cfg_templets_skin/}/js/jquery.min.js"></script>
+        <!-- owl.carousel JS
+        ============================================ -->        
+        <script src="{dede:global.cfg_templets_skin/}/js/owl.carousel.min.js"></script>
+        <!-- scrollUp JS
+        ============================================ -->        
+        <script src="{dede:global.cfg_templets_skin/}/js/jquery.scrollUp.min.js"></script>
+        <!-- Apple TV Effect -->
+        <script src="{dede:global.cfg_templets_skin/}/js/atvImg-min.js"></script>
+        <!-- Add venobox js -->
+        <script type="text/javascript" src="{dede:global.cfg_templets_skin/}/venobox/venobox.min.js"></script>
+        <!-- plugins JS
+        ============================================ -->        
+        <script src="{dede:global.cfg_templets_skin/}/js/plugins.js"></script>
+        <!-- main JS
+        ============================================ -->        
+        <script src="{dede:global.cfg_templets_skin/}/js/main.js"></script>    
+</body>
+ 
+</html>
+--------------------- 
+作者：kry1012911 
+来源：CSDN 
+原文：https://blog.csdn.net/kry1012911/article/details/80646907 
+版权声明：本文为博主原创文章，转载请附上博文链接！
